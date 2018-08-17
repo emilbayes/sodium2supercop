@@ -1,0 +1,28 @@
+{
+  "name": "sodium2supercop",
+  "version": "0.0.0",
+  "description": "Convert libsodium key pairs to ed25519-supercop key pairs",
+  "main": "index.js",
+  "dependencies": {
+    "sodium-universal": "^2.0.0"
+  },
+  "devDependencies": {
+    "ed25519-supercop": "^1.2.0",
+    "sodium-native": "^2.2.1",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilbayes/sodium2supercop.git"
+  },
+  "keywords": [],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/sodium2supercop/issues"
+  },
+  "homepage": "https://github.com/emilbayes/sodium2supercop#readme"
+}
