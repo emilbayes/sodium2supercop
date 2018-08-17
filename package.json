@@ -1,6 +1,6 @@
 {
   "name": "sodium2supercop",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert libsodium key pairs to ed25519-supercop key pairs",
   "main": "index.js",
   "dependencies": {
