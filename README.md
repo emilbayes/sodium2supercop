@@ -6,11 +6,18 @@
 
 ```js
 var s2s = require('sodium2supercop')
+var ed = require('ed25519-supercop')
 
 var sk = // Buffer ...
 var pk = // Buffer ...
 
 var keypair = s2s(sk, pk)
+
+// Now you can used your sodium keys with supercop
+var msg = Buffer.from('Hello world!')
+var signature = ed.sign(msg, keypair.publicKey, keypair.secretKey)
+
+ed.verify(signature, msg, keypair.publicKey)
 ```
 
 Note that this transformation is one-way, ie. you cannot convert supercop keys
